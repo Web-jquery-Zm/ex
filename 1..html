@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 500px;
+            font: 18px/40px solid Arial;
+            margin:50px auto;
+            background: lightseagreen;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    var div = document.querySelector("div");
+    var nowTime = new Date();
+    var h = nowTime.getHours();
+    var m = nowTime.getMinutes();
+    var s = nowTime.getSeconds();
+    var str = `当前时间是${h}小时${m}分钟${s}秒`;
+    div.innerHTML = str;
+</script>
+</body>
+</html>
